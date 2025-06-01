@@ -33,7 +33,6 @@ public class TransactionController {
     }
 
     @DeleteMapping
-
     public ResponseEntity<Void> clearTransactions() {
         transactionService.clearTransactions();
         return ResponseEntity.ok().build();
